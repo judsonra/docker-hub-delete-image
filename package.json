@@ -1,0 +1,13 @@
+{
+  "name": "docker-hub-manu-auto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automacao local para delete em lotes no Docker Hub image management.",
+  "scripts": {
+    "delete:dockerhub": "PLAYWRIGHT_BROWSERS_PATH=.cache/ms-playwright node scripts/delete-dockerhub-images.js",
+    "install:browsers": "PLAYWRIGHT_BROWSERS_PATH=.cache/ms-playwright npx playwright install chromium"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
